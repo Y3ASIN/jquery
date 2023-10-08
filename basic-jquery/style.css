@@ -1,0 +1,12 @@
+.style1 {
+  background-color: azure;
+  color: blueviolet;
+}
+.style2 {
+  font-size: 2rem;
+  padding: 5px;
+}
+.toggleStyle {
+  color: brown;
+  font-style: italic;
+}
