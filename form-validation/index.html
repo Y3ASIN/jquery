@@ -4,42 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form validation</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form action="/" method="get">
-      <fieldset>
-        <legend>Form validation</legend>
-        <div>
-          <label for="name">Name: </label>
-          <input id="name" type="text" name="name" placeholder="Enter name" />
-        </div>
-        <div id="name-error" class="error"></div>
-        <br />
-        <div>
-          <label for="email">Email: </label>
-          <input
-            id="email"
-            type="email"
-            name="email"
-            placeholder="Enter email"
-          />
-        </div>
-        <div id="email-error" class="error"></div>
-        <br />
+    <div class="form">
+      <form action="/" method="get">
+        <fieldset>
+          <legend>Form validation</legend>
+          <div>
+            <label for="name">Name: </label>
+            <input id="name" type="text" name="name" placeholder="Enter name" />
+          </div>
+          <div id="name-error" class="error"></div>
+          <br />
+          <div>
+            <label for="email">Email: </label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Enter email"
+            />
+          </div>
+          <div id="email-error" class="error"></div>
+          <br />
 
-        <div>
-          <label for="password">Password: </label>
-          <input
-            id="password"
-            type="password"
-            name="password"
-            placeholder="Enter password"
-          />
-        </div>
-        <div id="password-error" class="error"></div>
-        <button type="submit">Submit</button>
-      </fieldset>
-    </form>
+          <div>
+            <label for="address">Address: </label>
+            <input
+              id="address"
+              type="text"
+              name="address"
+              placeholder="Enter address"
+            />
+          </div>
+          <div id="address-error" class="error"></div>
+          <br />
+
+          <div>
+            <label for="phone">Phone: </label>
+            <input
+              id="phone"
+              type="text"
+              name="phone"
+              placeholder="Enter phone"
+            />
+          </div>
+          <div id="phone-error" class="error"></div>
+          <br />
+
+          <div>
+            <label for="password">Password: </label>
+            <input
+              id="password"
+              type="password"
+              name="password"
+              placeholder="Enter password"
+            />
+          </div>
+          <div id="password-error" class="error"></div>
+          <hr />
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="script.js"></script>
   </body>

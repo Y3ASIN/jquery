@@ -3,17 +3,27 @@ $(document).ready(function () {
   $("form").submit(function (e) {
     e.preventDefault();
 
-    let name = $("input[name='name']").val();
-    let email = $("input[name='email']").val();
-    let password = $("input[name='password']").val();
-
+    let name = $("#name").val();
+    let email = $("#email").val();
+    let password = $("#password").val();
+    let address = $("#address").val();
+    let phone = $("#phone").val();
     let error = false;
+
     if (name.trim() === "") {
       showError("name", "Name is required.");
       error = true;
     }
     if (email.trim() === "") {
       showError("email", "Email is required.");
+      error = true;
+    }
+    if (address.trim() === "") {
+      showError("address", "Address is required.");
+      error = true;
+    }
+    if (phone.trim() === "") {
+      showError("phone", "Phone is required.");
       error = true;
     }
     if (password.trim().length <= 8) {
@@ -27,9 +37,9 @@ $(document).ready(function () {
   });
   //function that show the error message
   function showError(field, message) {
-    $("#" + field + "-error").remove();
-    $("#" + field).after(
-      `<div id="${field}-error" class="error" style="color: red">${message}</div>`
+    $(`#${field}-error`).remove();
+    $(`#${field}`).after(
+      `<div id="${field}-error" class="error" >${message}</div>`
     );
   }
 });
